@@ -1,0 +1,25 @@
+@import '../css/define-color.scss';
+
+.inputStoreWrapper {
+  padding: 20px;
+
+  .listInputStore {
+    background: #ffffff;
+    margin-top: 10px;
+
+    .inputStoreItem {
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+      border-color: $border-color;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      .quantumInputStore input{
+        max-width: 50px;
+      }
+    }
+    .inputStoreItem:last-child {
+      border-width: 0px;
+    }
+  }
+}

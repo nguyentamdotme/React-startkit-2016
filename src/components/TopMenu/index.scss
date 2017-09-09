@@ -1,0 +1,17 @@
+@import '../css/define-color.scss';
+@import '../css/define-media-screen.scss';
+.topMenu {
+  background: $primary-color;
+  .leftMenuDrawers {
+    display: inline;
+    @include for-tablet-landscape-up {
+      display:none;
+    }
+  }
+  .nameAppTopMenu {
+    display: none;
+    @include for-tablet-portrait-up {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import './define-media-screen.scss';
+@import "~normalize.css/normalize.css";
+@import './define-color.scss';
+// usage
+body {
+  background: $background2-color;
+  @include for-desktop-up {
+
+  }
+}
+
+.mainContent {
+  background: $secondary-color;
+  padding: 20px;
+}
+
+li>a {
+  text-decoration: none;
+}

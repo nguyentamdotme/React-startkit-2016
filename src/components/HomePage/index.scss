@@ -1,0 +1,8 @@
+@import '../css/define-media-screen.scss';
+
+.leftMenuWrapper {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: inline;
+  }
+}

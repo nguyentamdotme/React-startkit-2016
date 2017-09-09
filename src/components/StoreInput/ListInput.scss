@@ -1,0 +1,77 @@
+@import'../css/define-color.scss';
+@import '../css/define-media-screen.scss';
+.btnAddItemInputList {
+  padding: 0px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.textCenter {
+  text-align: center;
+}
+.itemInput {
+  .imgProductWrapper {
+    text-align: center;
+    position: relative;
+    .imgProduct {
+      width: 130px;
+      margin: 10px;
+      position: absolute;
+      left: 10px;
+      top: 0;
+      margin: auto;
+      @include for-phone-portrait-small-up {
+        width: 250px;
+        margin: 10px;
+      }
+      @include for-tablet-portrait-up {
+        width: 250px;
+        left: 10px;
+      }
+      @include for-tablet-landscape-up {
+        width: 100px;
+        left: 20px;
+        &:hover {
+          width: 200px;
+          z-index: 5;
+          top: 40%;
+          left: 50%;
+          margin-top: -70px;
+          margin-left: -70px;
+          border: 1px solid #dddddd;
+        }
+      }
+      @include for-big-desktop-up {
+        width: 150px;
+        left: 50px;
+      }
+    }
+  }
+  .productInfo {
+    .basicInfo {
+      p {
+        margin: 0px;
+      }
+      .inputQuantum {
+        margin-left: 10px;
+        max-width: 45px;
+      }
+    }
+
+    .itemFunction {
+      .priceTotal {
+        span {
+          color: #F93232;
+          border: 1px solid #F93232;
+          padding: 5px;
+        }
+      }
+
+      .iconDelete {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
